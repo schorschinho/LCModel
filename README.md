@@ -4,7 +4,9 @@ In this repository, I am collecting readily compiled and executable binaries for
 
 ## Quick download links
 
-[MacOS Catalina]()
+[MacOS Catalina](LCModel_macos_catalina.7z)
+[Windows 10](LCModel_win10.7z)
+
 ## Contents of this repository
 
 - `binaries` contains the compiled LCModel executables, sorted by operating system (first level) and version (second level). As the compiled executables are just a little over 100 MB in file size (the maximum allowed size on GitHub if we don't want to use GitLFS), they are compressed into [.7z format, which you can open with the free, open-source 7-Zip tool](https://www.7-zip.org/).
