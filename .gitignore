@@ -1,2 +1,6 @@
 #
 .exe
+.DS_Store
+.o
+LCModel.exe
+lcmodel

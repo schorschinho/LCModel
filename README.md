@@ -2,6 +2,9 @@
 
 In this repository, I am collecting readily compiled and executable binaries for the [LCModel software](http://s-provencher.com/lcmodel.shtml), a popular method for linear-combination modeling of magnetic resonance spectroscopy data.
 
+## Quick download links
+
+[MacOS Catalina]()
 ## Contents of this repository
 
 - `binaries` contains the compiled LCModel executables, sorted by operating system (first level) and version (second level). As the compiled executables are just a little over 100 MB in file size (the maximum allowed size on GitHub if we don't want to use GitLFS), they are compressed into [.7z format, which you can open with the free, open-source 7-Zip tool](https://www.7-zip.org/).
@@ -23,6 +26,19 @@ GFortran 11.1.0 from http://www.equation.com/ftpdir/gcc/gcc-11.1.0-64.exe
 Enter at Windows command prompt:
 
 `gfortran.exe -ffpe-summary=none -std=legacy -O3 LCModel.f -o LCModel.exe`
+
+### MacOS Catalina
+
+Mac OS Catalina 10.15.7
+
+GFortran 10.2 from https://github.com/fxcoudert/gfortran-for-macOS/releases/download/10.2/gfortran-10.2-Catalina.dmg
+
+Enter at Terminal prompt:
+
+```
+gfortran -c -fno-backslash -fno-f2c -O3 -fall-intrinsics -std=legacy -Wuninitialized -ffpe-summary=none LCModel.f
+gfortran LCModel.o -o lcmodel
+```
 
 ## Testing procedures
 
