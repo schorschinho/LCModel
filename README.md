@@ -17,14 +17,19 @@ This is how the executables in the `binaries` folder were generated
 ### Windows 10
 
 Windows 10 Enterprise Edition
+
 GFortran 11.1.0 from http://www.equation.com/ftpdir/gcc/gcc-11.1.0-64.exe
+
 Enter at Windows command prompt:
+
 `gfortran.exe -ffpe-summary=none -std=legacy -O3 LCModel.f -o LCModel.exe`
 
 ## Testing procedures
 
 Copy the compiled binary into the `test_lcm` folder and run
+
 `./lcmodel < control.file` (Mac)
+
 `lcmodel < control.file` (Windows)
 
 Then, compare the output (`out.ps`) with the gold-standard output (`out_ref_build.ps`).
