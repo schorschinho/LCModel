@@ -10,7 +10,7 @@ In this repository, I am collecting readily compiled and executable binaries for
 
 ## Contents of this repository
 
-- `binaries` contains the compiled LCModel executables, sorted by operating system (first level) and version (second level). As the compiled executables are just a little over 100 MB in file size (the maximum allowed size on GitHub if we don't want to use GitLFS), they are compressed into [.7z format, which you can open with the free, open-source 7-Zip tool](https://www.7-zip.org/).
+- `binaries` contains the compiled LCModel executables, sorted by operating system (first level) and version (second level). As the compiled executables are just a little over 100 MB in file size (the maximum allowed size on GitHub if we don't want to use GitLFS), they are compressed into .zip format, which is atomatically unzipped in Osprey if needed or you can open with your OS native unzip commands.
 - `source` contains the LCModel Fortran77 source code, as downloaded from the [LCModel website](http://s-provencher.com/pub/LCModel/source.zip).
 - `test_lcm` contains a test dataset that Dr. Martin Wilson (https://github.com/martin3141) has shared along with the first compilation instructions in an [MRSHub forum thread](https://forum.mrshub.org/t/building-lcmodel/317).
 - `README.md` is the file you are reading.
