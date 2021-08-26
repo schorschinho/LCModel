@@ -4,9 +4,9 @@ In this repository, I am collecting readily compiled and executable binaries for
 
 ## Quick download links
 
-[MacOS Catalina](/binaries/macos/catalina/LCModel_macos_catalina.7z)
+[MacOS Catalina](/binaries/macos/catalina/lcmodel.zip)
 
-[Windows 10](/binaries/win/win10/LCModel_win10.7z)
+[Windows 10](/binaries/win/win10/LCModel.exe.zip)
 
 ## Contents of this repository
 
