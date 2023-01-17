@@ -4,7 +4,9 @@ In this repository, I am collecting readily compiled and executable binaries for
 
 ## Quick download links
 
-[MacOS Catalina](/binaries/macos/catalina/lcmodel.zip)
+[MacOS Catalina Intel i5](/binaries/macos/catalina/intel/lcmodel.zip)
+
+[MacOS Monterey Apple M1 Pro](/binaries/macos/catalina/m1/lcmodel.zip)
 
 [Windows 10](/binaries/win/win10/LCModel.exe.zip)
 
@@ -18,7 +20,7 @@ In this repository, I am collecting readily compiled and executable binaries for
 
 ## Compilation procedures
 
-This is how the executables in the `binaries` folder were generated
+This is how the executables in the `binaries` folder were generated:
 
 ### Windows 10
 
@@ -30,11 +32,24 @@ Enter at Windows command prompt:
 
 `gfortran.exe -ffpe-summary=none -std=legacy -O3 LCModel.f -o LCModel.exe`
 
-### MacOS Catalina
+### MacOS Catalina Intel i5
 
-Mac OS Catalina 10.15.7
+Mac OS Catalina 10.15.7 (Intel i5)
 
 GFortran 10.2 from https://github.com/fxcoudert/gfortran-for-macOS/releases/download/10.2/gfortran-10.2-Catalina.dmg
+
+Enter at Terminal prompt:
+
+```
+gfortran -c -fno-backslash -fno-f2c -O3 -fall-intrinsics -std=legacy -Wuninitialized -ffpe-summary=none LCModel.f
+gfortran LCModel.o -o lcmodel
+```
+
+### MacOS Monterey Apple M1 Pro
+
+Mac OS Monterey 12.6 (M1 Pro)
+
+GFortran 12.1 from https://github.com/fxcoudert/gfortran-for-macOS/releases/download/12.1-monterey/gfortran-ARM-12.1-Monterey.dmg
 
 Enter at Terminal prompt:
 
@@ -76,3 +91,5 @@ If you have questions about how to use LCModel, please refer to the [official ma
 ## Acknowledgements
 
 The LCModel source code was made available free of charge by Dr. Stephen Provencher. Please see the licensing agreement for details.
+
+- Compilation of MacOS Monterey Apple M1 Pro thanks to Bethany A. Stennett, University of Florida.
