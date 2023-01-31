@@ -5,12 +5,13 @@ test_lcm/out.ps: binaries/linux/lcmodel
 	../binaries/linux/lcmodel < control.file
 
 package: binaries/linux/lcmodel.xz
-binaries/linux/lcmodel.xz: binaries/linux/lcmodel
-	xz -k $^
 
-binaries/linux/lcmodel: | binaries/linux
+binaries/linux/lcmodel: | binaries/linux/
 	gfortran -c -fno-backslash -fno-f2c -O3 -fall-intrinsics -std=legacy -Wuninitialized -ffpe-summary=none source/LCModel.f
-	gfortran LCModel.o -o binaries/lcmodel
+	gfortran LCModel.o -o $@
 
-binaries/linux:
+%/:
 	mkdir -p $@
+
+%.xz: %
+	xz -k $^
