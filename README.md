@@ -22,6 +22,10 @@ In this repository, I am collecting readily compiled and executable binaries for
 
 This is how the executables in the `binaries` folder were generated:
 
+### Linux
+run `make`. see [`Makefile`](Makefile)
+
+
 ### Windows 10
 
 Windows 10 Enterprise Edition

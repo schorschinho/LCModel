@@ -1,6 +1,7 @@
 #
-.exe
 .DS_Store
-.o
+*.exe
+*.o
 LCModel.exe
 lcmodel
+test_lcm/out.ps
