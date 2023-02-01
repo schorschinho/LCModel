@@ -1,4 +1,4 @@
-# LCModel compiled binaries for Windows & Mac
+# LCModel compiled binaries for Windows, Mac & Linux
 
 In this repository, I am collecting readily compiled and executable binaries for the [LCModel software](http://s-provencher.com/lcmodel.shtml), a popular method for linear-combination modeling of magnetic resonance spectroscopy data.
 
@@ -9,6 +9,8 @@ In this repository, I am collecting readily compiled and executable binaries for
 [MacOS Monterey Apple M1 Pro](/binaries/macos/catalina/m1/lcmodel.zip)
 
 [Windows 10](/binaries/win/win10/LCModel.exe.zip)
+
+[Linux (Debian 5.19.11-1 x86_64)](https://github.com/schorschinho/LCModel/blob/main/binaries/linux/lcmodel.xz)
 
 ## Contents of this repository
 
@@ -23,8 +25,8 @@ In this repository, I am collecting readily compiled and executable binaries for
 This is how the executables in the `binaries` folder were generated:
 
 ### Linux
-run `make`. see [`Makefile`](Makefile)
 
+Run `make`. See [`Makefile`](Makefile).
 
 ### Windows 10
 
@@ -96,4 +98,5 @@ If you have questions about how to use LCModel, please refer to the [official ma
 
 The LCModel source code was made available free of charge by Dr. Stephen Provencher. Please see the licensing agreement for details.
 
-- Compilation of MacOS Monterey Apple M1 Pro thanks to Bethany A. Stennett, University of Florida.
+- Compilation for MacOS Monterey Apple M1 Pro thanks to Bethany A. Stennett, University of Florida.
+- Compilation for Linux (Debian 5.19.11-1 x86_64) thanks to @WillForan, University of Pittsburgh
