@@ -8,7 +8,7 @@ In this repository, I am collecting readily compiled and executable binaries for
 |--------------------|--------------|----------|---------------|-------------|
 | MacOS Catalina 10.15.7 | Intel i5 | [Download](/binaries/macos/catalina/intel/lcmodel.zip) | [GFortran 10.2](https://github.com/fxcoudert/gfortran-for-macOS/releases/download/10.2/gfortran-10.2-Catalina.dmg) | [@schorschinho](https://www.github.com/schorschinho) |
 | MacOS Monterey 12.6 | M1 Pro | [Download](/binaries/macos/monterey/m1/lcmodel.zip) | [GFortran 12.1](https://github.com/fxcoudert/gfortran-for-macOS/releases/download/12.1-monterey/gfortran-ARM-12.1-Monterey.dmg) | Bethany A. Stennett |
-| MacOS Sequoia 15.4.1 | M4 | [Download](/binaries/macos/sequoia/m4/lcmodel.zip) | [missing info]() | [@julianmer](https://www.github.com/julianmer) |
+| MacOS Sequoia 15.4.1 | M4 | [Download](/binaries/macos/sequoia/m4/lcmodel.zip) | [GFortran 15.1.0](https://formulae.brew.sh/formula/gcc) | [@julianmer](https://www.github.com/julianmer) |
 | Windows 10 Enterprise Edition | x86_64 | [Download](/binaries/win/win10/lcmodel.exe.zip) | [GFortran 11.1.0](http://www.equation.com/ftpdir/gcc/gcc-11.1.0-64.exe) | [@schorschinho](https://www.github.com/schorschinho) |
 | Linux Debian 5.19.11-1 | x86_64 | [Download](/binaries/linux/lcmodel.xz) | [Makefile](Makefile) | [@WillForan](https://www.github.com/WillForan) |
 
