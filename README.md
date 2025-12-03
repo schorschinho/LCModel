@@ -4,13 +4,13 @@ In this repository, I am collecting readily compiled and executable binaries for
 
 ## Quick download links
 
-[MacOS Catalina Intel i5](/binaries/macos/catalina/intel/lcmodel.zip)
-
-[MacOS Monterey Apple M1 Pro](/binaries/macos/catalina/m1/lcmodel.zip)
-
-[Windows 10](/binaries/win/win10/LCModel.exe.zip)
-
-[Linux (Debian 5.19.11-1 x86_64)](https://github.com/schorschinho/LCModel/blob/main/binaries/linux/lcmodel.xz)
+| System compiled on | Architecture | Download | Compiled with |
+|--------------------|--------------|----------|---------------|
+| MacOS Catalina 10.15.7 | Intel i5 | [Download](/binaries/macos/catalina/intel/lcmodel.zip) | [GFortran 10.2](https://github.com/fxcoudert/gfortran-for-macOS/releases/download/10.2/gfortran-10.2-Catalina.dmg) |
+| MacOS Monterey 12.6 | M1 Pro | [Download](/binaries/macos/monterey/m1/lcmodel.zip) | [GFortran 12.1](https://github.com/fxcoudert/gfortran-for-macOS/releases/download/12.1-monterey/gfortran-ARM-12.1-Monterey.dmg) |
+| MacOS Sequoia 15.4.1 | M4 | [Download](/binaries/macos/sequoia/m4/lcmodel.zip) | [missing info]() |
+| Windows 10 Enterprise Edition | x86_64 | [Download](/binaries/win/win10/lcmodel.exe.zip) | [GFortran 11.1.0](http://www.equation.com/ftpdir/gcc/gcc-11.1.0-64.exe) |
+| Linux Debian 5.19.11-1 | x86_64 | [Download](/binaries/linux/lcmodel.xz) | [Makefile](Makefile) |
 
 ## Contents of this repository
 
@@ -22,7 +22,7 @@ In this repository, I am collecting readily compiled and executable binaries for
 
 ## Compilation procedures
 
-This is how the executables in the `binaries` folder were generated:
+If you want to generate your own executable, please use the following instructions. They were used to generate the executables in the `binaries` folder:
 
 ### Linux
 
@@ -30,32 +30,13 @@ Run `make`. See [`Makefile`](Makefile).
 
 ### Windows 10
 
-Windows 10 Enterprise Edition
-
-GFortran 11.1.0 from http://www.equation.com/ftpdir/gcc/gcc-11.1.0-64.exe
-
 Enter at Windows command prompt:
 
-`gfortran.exe -ffpe-summary=none -std=legacy -O3 LCModel.f -o LCModel.exe`
-
-### MacOS Catalina Intel i5
-
-Mac OS Catalina 10.15.7 (Intel i5)
-
-GFortran 10.2 from https://github.com/fxcoudert/gfortran-for-macOS/releases/download/10.2/gfortran-10.2-Catalina.dmg
-
-Enter at Terminal prompt:
-
 ```
-gfortran -c -fno-backslash -fno-f2c -O3 -fall-intrinsics -std=legacy -Wuninitialized -ffpe-summary=none LCModel.f
-gfortran LCModel.o -o lcmodel
+gfortran.exe -ffpe-summary=none -std=legacy -O3 LCModel.f -o LCModel.exe`
 ```
 
-### MacOS Monterey Apple M1 Pro
-
-Mac OS Monterey 12.6 (M1 Pro)
-
-GFortran 12.1 from https://github.com/fxcoudert/gfortran-for-macOS/releases/download/12.1-monterey/gfortran-ARM-12.1-Monterey.dmg
+### MacOS
 
 Enter at Terminal prompt:
 
@@ -98,5 +79,6 @@ If you have questions about how to use LCModel, please refer to the [official ma
 
 The LCModel source code was made available free of charge by Dr. Stephen Provencher. Please see the licensing agreement for details.
 
+- Compilation for MacOS Sequoia Apple M4 thanks to Julian Merkofer, Eindhoven University
 - Compilation for MacOS Monterey Apple M1 Pro thanks to Bethany A. Stennett, University of Florida.
 - Compilation for Linux (Debian 5.19.11-1 x86_64) thanks to @WillForan, University of Pittsburgh
